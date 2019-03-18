@@ -4,8 +4,8 @@ import Button from './Button';
 const Footer = () => {
   return (
     <div>
-      <Button text='Kyllä' />
-      <Button text='Ei' />
+      <Button content='Vasen' />
+      <Button content='Oikea' />
     </div>
   )
 }
