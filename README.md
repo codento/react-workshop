@@ -2,6 +2,7 @@
 React workshop 22.3.2019
 
 ## Ennakkotehtävät
+- luo oma GitHub -tunnus osoitteessa https://github.com/join 
 - Asenna koneellesi
     - git - https://git-scm.com/
     - node - https://nodejs.org/
