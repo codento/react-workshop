@@ -6,8 +6,8 @@ const Footer = () => {
 
     <footer className="footer">
       <div className="content">
-        <Button text='Kyllä' />
-        <Button text='Ei' />
+        <Button content='Vasen' />
+        <Button content='Oikea' />
       </div>
     </footer>
 
