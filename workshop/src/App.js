@@ -9,6 +9,12 @@ const App = () => {
       <div className='section' style={{ height: 'calc(100vh - 300px)' }}>
         <p> Hei maailma! </p>
       </div>
+
+<div className="container">
+      <div className='section'>
+        <p> Hei minun komponentistani! </p>
+      </div>
+</div>
       <Footer />
     </div>
   )
