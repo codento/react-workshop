@@ -3,10 +3,14 @@ import Button from './Button';
 
 const Footer = () => {
   return (
-    <div>
-      <Button content='Vasen' />
-      <Button content='Oikea' />
-    </div>
+
+    <footer className="footer">
+      <div className="content">
+        <Button content='Vasen' />
+        <Button content='Oikea' />
+      </div>
+    </footer>
+
   )
 }
 
