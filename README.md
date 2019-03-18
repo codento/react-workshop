@@ -17,3 +17,5 @@ React workshop 22.3.2019
 5. Routing
 6. Lisätehtävät
 7. Deploy
+
+<details>Details</details>
