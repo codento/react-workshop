@@ -7,7 +7,8 @@ class App extends Component {
     return (
       <div className="container">
         <Header />
-        <p>Hei maailma!</p>
+        <div className='section' style={{ height: 'calc(100vh - 300px)'}}>
+        Hei maailma!</div>
         <Footer />
       </div>
     )
