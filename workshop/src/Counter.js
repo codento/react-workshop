@@ -4,7 +4,7 @@ const Counter = () => {
   const [ currentValue, setCurrentValue ] = useState(0);
 
   useEffect(() => {
-    console.log(`Rendered! Current value: ${ currentValue }`)
+    console.log(`Rendered! Current value: ${ currentValue }`);
   })
 
   setTimeout(() => {

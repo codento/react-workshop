@@ -8,7 +8,7 @@ const App = () => {
     <div className="container">
       <Header />
       <div className='section' style={{ height: 'calc(100vh - 300px)'}}>
-        <Counter />
+        <p>Hei maailma!</p>
       </div>
       <Footer />
     </div>
