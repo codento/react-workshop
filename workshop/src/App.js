@@ -22,7 +22,7 @@ const App = () => {
 
 
 
-  const callBack = (liked) => {
+  const callback = (liked) => {
     liked && setLikes(likes.concat(dogs[0]))
     setDogs(dogs.slice(1))
   }
@@ -32,8 +32,8 @@ const App = () => {
       <Header />
       <Content pet={ dogs.length >= 1 ? dogs[0] : {title: "No moar doggos"} }/>
       <Footer>
-        <Button onClick={() => callBack(false)} icon="heart-broken" background="danger" />
-        <Button onClick={() => callBack(true)} icon="heart" background="primary" />
+        <Button onClick={() => callback(false)} icon="heart-broken" background="danger" />
+        <Button onClick={() => callback(true)} icon="heart" background="primary" />
       </Footer>
     </div>
   )
