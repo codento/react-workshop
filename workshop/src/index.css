@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Arvo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -65,10 +65,11 @@ code {
 }
 
 img {
-  min-height: 25%;
-  max-height: 50%;
-  min-width: 25%;
-  max-width: 75%;
+  width: 10em;
+  height: auto;
+}
+
+.card-image {
   border-radius: 0.25em;
 }
 
@@ -77,11 +78,22 @@ img {
   flex-direction: column;
   align-items: center;
   font-size: 1.5em;
-  text-transform: uppercase;
   font-weight: 700;
+  box-shadow: 0.10em 0.10em 3em #888888;
+  padding: 0.5em;
+  border-radius: 0.25em; 
 }
 
 .card-title {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+}
+
+@media only screen and (min-width: 426px) {
+  img {
+    width: 20em;
+  }
 }
