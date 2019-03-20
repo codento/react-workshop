@@ -8,6 +8,7 @@ const apiUrl = 'https://koira-api.herokuapp.com/api/v1/dogs'
 
 const App = () => {
   const [ dogs, setDogs ] = useState([])
+  const [ likes, setLikes ] = useState([])
 
   const fetchDogs = async () => {
     const response = await fetch(apiUrl)
@@ -19,13 +20,20 @@ const App = () => {
     fetchDogs()
   }, [])
 
+
+
+  const callBack = (liked) => {
+    liked && setLikes(likes.concat(dogs[0]))
+    setDogs(dogs.slice(1))
+  }
+
   return (
     <div className="container">
       <Header />
-      <Content />
+      <Content pet={ dogs.length >= 1 ? dogs[0] : {title: "No moar doggos"} }/>
       <Footer>
-        <Button icon="heart-broken" background="danger" />
-        <Button icon="heart" background="primary" />
+        <Button onClick={() => callBack(false)} icon="heart-broken" background="danger" />
+        <Button onClick={() => callBack(true)} icon="heart" background="primary" />
       </Footer>
     </div>
   )
