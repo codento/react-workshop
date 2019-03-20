@@ -3,9 +3,9 @@ import Button from './Button';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-        <Button content="Vasen" />
-        <Button content="Oikea" />
+    <footer className="columns is-mobile">
+        <Button icon="heart-broken" />
+        <Button icon="heart" />
     </footer>
   )
 }
