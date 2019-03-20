@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Content = () => {
+const Content = ({ pet }) => {
   return (
     <div className="content">
       <div className="card-container">
         <div className="card-image">
-          <img src="https://rekkurescue.com/wp-content/uploads/2019/03/ninni4.jpg" alt="Ninni"/>
+        <img src={ pet.imageUrl } alt={pet.title}/>
         </div>
         <div className="card-title">
-          <span>Ninni</span>
+          <span>{ pet.title }</span>
         </div>
       </div>
     </div>
