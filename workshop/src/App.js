@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import Counter from './Counter'
+import Counter from './Counter';
+import Content from './Content';
+import Button from './Button';
 
 const apiUrl = 'https://koira-api.herokuapp.com/api/v1/dogs'
 
@@ -24,7 +26,10 @@ const App = () => {
       <div className='section' style={{ height: 'calc(100vh - 300px)'}}>
         <Counter />
       </div>
-      <Footer />
+      <Footer>
+        <Button icon="heart-broken" background="danger" />
+        <Button icon="heart" background="primary" />
+      </Footer>
     </div>
   )
 }

@@ -1,11 +1,9 @@
 import React from 'react';
-import Button from './Button';
 
-const Footer = () => {
+const Footer = ({ children }) => {
   return (
     <footer className="columns is-mobile">
-        <Button icon="heart-broken" background="danger" />
-        <Button icon="heart" background="primary" />
+      { children }
     </footer>
   )
 }
