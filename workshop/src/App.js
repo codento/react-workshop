@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Content from './Content';
 import Button from './Button';
+import Loader from 'react-loader-spinner';
 
 const apiUrl = 'https://koira-api.herokuapp.com/api/v1/dogs'
 
@@ -31,7 +32,13 @@ const App = () => {
     <div className="container">
       <Header />
       { loading
-        ? (<p>Loading...</p>)
+        ? (<div className="content">
+            <Loader 
+              type="Hearts" 
+              color="#DB162F"
+              height={200} 
+              width={200}/>
+          </div>)
         : <Content pet={ dogs.length >= 1
           ? dogs[0]
           : { imageUrl: "https://i.imgur.com/fS1Mn0V.jpg", title: "No moar doggos" } }/> }
