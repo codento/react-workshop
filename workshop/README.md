@@ -1,1 +1,0 @@
-Tämä on esimerkki siitä, millaisen applikaation rakennamme workshopin aikana!  Osa ei välttämättä saa projektia samana iltana valmiiksi, ja osa ehtii tehdä vielä ylimääräisiäkin featureita.
