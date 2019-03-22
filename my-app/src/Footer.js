@@ -1,9 +1,11 @@
 import React from 'react';
+import Button from './Button';
 
 const Footer = () => {
   return (
     <footer>
-      <p>Footer</p>
+      <Button icon="heart" />
+      <Button icon="heart-broken" />
     </footer>
   )
 }
