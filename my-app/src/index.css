@@ -1,14 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Arvo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  min-height: 100%;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.header {
+  color: #FFF;
+  background-color: #2E2E2E;
+  display: flex;
+  justify-content: center;
+  min-height: 1em;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 3em;
+  color: #FFF;
+  padding: 3em;
+}
+
+.heart {
+  background-color: #1DD3B0;
+}
+
+.heart-broken {
+  background-color: #DB162F; 
+}
+
+img {
+  width: 12.5em;
+  height: auto;
+}
+
+.card-image {
+  border-radius: 0.25em;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  box-shadow: 0.10em 0.10em 3em #888888;
+  padding: 0.5em;
+  border-radius: 0.25em; 
+}
+
+.card-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+}
+
+@media only screen and (min-width: 426px) {
+  img {
+    width: 20em;
+  }
 }

@@ -4,9 +4,9 @@ import Footer from './Footer';
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="container">
       <Header />
-      <p>Hei maailma!</p>
+      <p className="content">Hei maailma!</p>
       <Footer />
     </div>
   )

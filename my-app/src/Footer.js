@@ -3,7 +3,7 @@ import Button from './Button';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer">
       <Button icon="heart" />
       <Button icon="heart-broken" />
     </footer>
