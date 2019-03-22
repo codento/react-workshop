@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import Content from './Content';
 
 const App = () => {
   const [ pets, setPets ] = useState([])
@@ -23,7 +24,7 @@ const App = () => {
   return (
     <div className="container">
       <Header />
-      <p className="content">Hei maailma!</p>
+      {pets[0] && <Content title={pets[0].title} imageUrl={pets[0].imageUrl} />}
       <Footer />
     </div>
   )
